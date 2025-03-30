@@ -1,0 +1,23 @@
+services:
+  backend:
+    build:
+      context: ./css-convert-api
+    container_name: css-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./css-convert-api:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  frontend:
+    build:
+      context: ./css-translate
+    container_name: css-vue
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./css-translate:/app
+      - /app/node_modules
+    stdin_open: true
+    tty: true

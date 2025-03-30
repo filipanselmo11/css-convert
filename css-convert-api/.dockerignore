@@ -1,0 +1,27 @@
+# Diretórios e arquivos Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Ambientes virtuais
+.venv/
+venv/
+ENV/
+
+# Git
+.git
+.gitignore
+
+# VSCode, PyCharm etc.
+.vscode/
+.idea/
+
+# Arquivos de sistema/macOS
+.DS_Store
+
+# Arquivos temporários
+*.log
+*.tmp
+*.swp
